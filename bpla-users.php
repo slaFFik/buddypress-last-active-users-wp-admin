@@ -11,6 +11,13 @@
  * License:     GPLv2 or later
  */
 
+function bplau_init() {
+	add_filter( 'manage_users_columns', 'bplau_users_add_last_active_column' );
+	add_action( 'manage_users_custom_column', 'bplau_users_show_last_active_column_content', 10, 3 );
+}
+
+add_action( 'bp_init', 'bplau_init' );
+
 /**
  * Register column on Users page in wp-admin area
  *
@@ -23,8 +30,6 @@ function bplau_users_add_last_active_column( $columns ) {
 
 	return $columns;
 }
-
-add_filter( 'manage_users_columns', 'bplau_users_add_last_active_column' );
 
 /**
  * Display the last active date
@@ -44,5 +49,3 @@ function bplau_users_show_last_active_column_content( $value, $column_name, $use
 
 	return $value;
 }
-
-add_action( 'manage_users_custom_column', 'bplau_users_show_last_active_column_content', 10, 3 );
