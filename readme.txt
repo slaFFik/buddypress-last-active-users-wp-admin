@@ -1,9 +1,9 @@
 === BuddyPress Last Active Users (wp-admin) ===
 Contributors: slaFFik
-Tags: buddypress, members, users, wp-admin, date, last active
+Tags: buddypress, members, users, wp-admin, date, last active, multisite
 Requires at least: WordPress 3.2.1 and BuddyPress 1.6.2
 Tested up to: WordPress 4.1 and BuddyPress 2.1.1
-Stable tag: 1.0
+Stable tag: 1.1
 
 Display BuddyPress last active date for a user on `wp-admin/users.php` page
 
@@ -12,6 +12,8 @@ Display BuddyPress last active date for a user on `wp-admin/users.php` page
 Display BuddyPress last active date for a user on `wp-admin/users.php` page
 
 BuddyPress is required for plugin to work. If BuddyPress is not installed - plugin will not display any information.
+
+WordPress MultiSite supported.
 
 == Installation ==
 
@@ -24,6 +26,9 @@ BuddyPress is required for plugin to work. If BuddyPress is not installed - plug
 1. Users Admin Page with Last Active data
 
 == Changelog ==
+
+= 1.1 (05.01.2015) =
+* Added: WP MS support
 
 = 1.0 (04.01.2015) =
 * Initial release
